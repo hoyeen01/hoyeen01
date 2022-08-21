@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <main class="container">
+    <div class="nav">
+        <a id="active" href="index.html">About Me</a>
+        <a href="#contact">Contact</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="calc.html">Calculator</a>
+        <a href="flex.html">Flex Calculator</a>
+      </div>
+      <img src="profile2.JPG">
+      <h1>Oyinkansola Oyebola Salami</h1>
+      <div class="div1">
+      <p>I am an aspiring <b>frontend developer.</b></p>
+      <p>My end goal is to get my frontend engineering diploma and start making use of<br> my knowledge and skill as a frontend developer in the tech field.</p>
+      <p>I presently hold an ssce certificate.</p>
+      <p>I currently work as a make-up artist and i've had <br>my share of good and bad experiences.<br>my biggest experience is costumer relation, been able to relate with people and <br>it's an experience that'll help me be a great frontend developer.</p>
+      </div>
+
+      <div class="div2">
+      <p><b>My hobbies are:</b>
+        <ul>
+          <li>reading novel</li>
+          <li>hanging out with friends</li>
+          <li>relaxing at the beach</li>
+          <li>learning new things</li>
+          <li>dancing</li>
+        </ul>
+      </p>
+      </div>
+
+      <fieldset>
+        <h2>CONTACT ME</h2>
+        <section id="contact">
+        <form action="" method="get" class="regform">
+        
+        <label for="fname">Enter Your First Name: 
+            <input type="text" name="fname" required></label>
+
+        <label for="lname">Enter Your Last Name: 
+            <input type="text" name="lname" required></label>
+
+        <label for="email">Enter Your Email: 
+            <input type="email" name="email" required></label>
+
+        <label for="phone">Enter Your Phone Number: 
+            <input type="tel" name="phone" required></label>
+          
+        <label for="priority">Priority:  
+          <select id="priority" name="priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+          </select>
+        </label>
+
+        <label for="message">Provide more details:
+          <textarea  rows="3" cols="30" placeholder="leave a message..."></textarea>
+        </label>
+
+        <label for="reach_out">How do you want to hear from us?
+           <input type="radio" class="inline" name="through_email">Email</label>
+           <label><input type="radio" class="inline" name="through_phone">Phone</label>
+      </fieldset>
+          <button class="btn_submit">Submit</button>
+          </form>
+      </section> 
+      </main>    
+</body>
+</html>

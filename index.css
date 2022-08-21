@@ -1,0 +1,154 @@
+:root {
+  --margin-top: 50px;
+  --margin-bottom: 10px;
+  --padding: 20px;
+  --form-margin-top: 10px;
+  --color: rgb(76, 88, 176);
+  --medium-font-size: 1.2em;
+  --border-radius: 5px;
+  --border: 1px solid rgb(137, 149, 210);
+  --input-padding: 10px 20px;
+  --misc-color: rgb(244, 165, 236);
+  --btn-hover-color: rgb(245, 93, 207);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200;
+  max-width: 100%;
+  min-height: 400px;
+  margin: 0 auto;
+}
+
+body {
+  display: block;
+  background-image: url("justit.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  font-family: Tahoma;
+}
+  
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  width: 20%;
+  border-radius: 50%;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-family: fantasy;
+  font-size: 16px;
+}
+.nav a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 4px 6px;
+}
+#active {
+  background-color: #000;
+  color: #fff;
+}
+#active:hover{
+  background-color: plum;
+}
+.nav a:hover {
+  background-color: #333;
+  color: cyan;
+}
+h1 {
+  text-align: center;
+  color: black;
+  margin: 0 0 20px 0;
+  margin-top: var(--margin-top);
+}
+.div1 {
+  font-family: 'Roboto Slab', serif;
+  margin: auto;
+  margin-bottom: var(--margin-bottom);
+  text-align: center;
+}
+.div2 {
+  margin-top: var(--margin-top);
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: medium;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 1em auto;
+  color:rgb(6, 18, 77);
+}
+
+.regform {
+    margin: 0 auto;
+    min-width: 300px;
+    max-width: 500px;
+    width: 60vw;
+    padding: 0 0 2em 0;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0 2rem 0;
+
+}
+
+.form_group-label {
+  display: block;
+  margin: 0.5rem 0
+}
+
+input, textarea, select{
+  width: 100%;
+  margin: 10px 0 0 0;
+  min-height: 2em;
+}
+
+input, textarea {
+  border: 1px solid #0a0a23;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+.btn_submit {
+  display: block;
+  width: 30%;
+  min-width: 200px;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1em;
+  background-color: var(--misc-color);
+  border-color: white;
+}
+
+.btn_submit:hover {
+  background-color: var(--btn-hover-color);
+}
+
+@media (max-width:840px) {
+  .form {
+      width: 100%;
+  }
+}
+.log_form {
+  margin: 15% auto;
+  min-width: 200px;
+  max-width: 500px;
+  width: 60vw;
+  padding: 0 0 2em 0;
+}

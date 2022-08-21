@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="about.html">About Me</a>
+        <a href="#contact">Contact</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+        <a href="calc.html">Calculator</a>
+        <a href="flex.html">Flex Calculator</a>
+      </div>
+
+  
+  <form action="" method="get" class="regform"> 
+    <div class="container">
+      <h1>Registeration Form</h1>
+      <p>please fill in the form with the required info.</p>
+      <hr>
+  <fieldset>
+    <label for="fname" class="form_group-label">First Name:
+    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required></label>
+     
+    <label for="lname">Last Name:
+    <input type="text" id="lname" name="lname" placeholder="Enter your last name" required></label>
+    
+    <label for="phone">Phone number:
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required></label>
+
+    <label for="email">Email address:
+      <input type="text" id="email" name="email" placeholder="Enter your email address" required></label>
+    
+    <label for="gender">Gender: 
+    <select id="gender" name="gender" required>
+      <option value="">select gender</option>
+      <option value="1">Female</option>
+      <option value="2">Male</option>
+      <option value="3">Other</option>
+    </select></label>
+    
+    <label for="country">Country:
+    <select name="country" required>
+      <option value="1">Algeria</option>
+      <option value="2">Bosnia</option>
+      <option value="3">Kenya</option>
+      <option value="4">Nigeria</option>
+      <option value="5">Oman</option>
+    </select></label>
+     
+    <label for="state/province">State/Province:
+    <select name="state/province" required>
+      <option value="1">Lagos</option>
+      <option value="2">Ogun</option>
+      <option value="3">Abuja</option>
+    </select></label>
+
+    <label for="uname">Username:
+    <input type="text" id="uname" name="uname" placeholder="Create a Username" required></label>
+    
+    <label for="pwd">Password:
+    <input type="password" id="pwd" name="pwd" placeholder="Create a Password" required></label>
+    
+    <label for="pwd">Confirm password:
+    <input type="password" id="cpwd" name="cpwd" placeholder="Confirm your password" required></label>
+</fieldset>
+<fieldset>
+  <label>How do you want to hear from us? </label>
+  <label><input type="radio" class="inline" name="through_email">By Email</label>
+     <label><input type="radio" class="inline" name="through_phone">By Phone</label>
+     <label><input type="checkbox" class="inline" id="tandc" name="tandc" required>I accept the <a href="https://www.altschoolafrica.com/policy">terms and conditions</a></label>
+  </fieldset>
+  <fieldset>
+     <label for="age">Enter your age:
+      <input type="number" id="age" name="age" min="18" max="50" placeholder="Enter your age" required></label>
+    
+    <label for="file">Add a profile picture:<input type="file" id="file" name="file" required></label>
+  
+    <label for="message">Provide more Info:
+      <textarea  rows="3" cols="30" placeholder="I'm a student of altschoolafrica..."></textarea></label>
+  </fieldset>
+  <fieldset>
+  <label>How did you hear about us?
+    <select name="referer">
+      <option value="">(Select one)</option>
+      <option value="1">Facebook</option>
+      <option value="2">Linkedin</option>
+      <option value="3">Google</option>
+      <option value="4">Other</option>
+    </select></label>
+</fieldset>
+    <button class="btn_submit">Submit</button>
+    <button class="btn_btn-submit"><a href="about.html">Back</a></button>
+</div>
+</form>
+</body>
+
+</html>

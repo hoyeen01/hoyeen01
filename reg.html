@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reg form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h2>Altschool Registration Form</h2>
+        <form action="" method="post" class="regform">
+
+        <label for="fname" class="form_group-label">First Name:
+        <input type="text" id="fname" name="fname" class="fname" placeholder="First name" required>
+        </label>
+     
+        <label for="lname" class="form_group-label">Last Name:
+        <input type="text" id="lname" name="lname" class="lname" placeholder="Last name" required>
+        </label>
+    
+        <label for="email" class="form_group-label">Email:
+        <input type="email" id="email" name="email" class="email" placeholder="Email address" required>
+        </label>
+
+        <label for="phone" class="form_group-label">Phone:
+        <input type="tel" id="phone" name="phone" class="phone" placeholder="Phone number" required>
+        </label>
+
+        <label for="gender" class="form_group-label">Gender:
+        <select id="gender" name="gender" class="gender">
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="not_to_say">Prefer not to say</option>
+        </select></label>
+
+    
+        <button class="btn_submit">submit</button>
+    
+        </form>
+    </main>
+</body>
+</html>
