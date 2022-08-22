@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --margin-top: 50px;
   --margin-bottom: 10px;
@@ -15,6 +17,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -26,39 +30,66 @@
 
 body {
   display: block;
-  background-image: url("justit.jpg");
+  /* background-image: url("justit.jpg"); */
   background-attachment: fixed;
+  background-image: linear-gradient(
+      rgba(243, 100, 229, 0.506),
+      rgba(9, 141, 235, 0.463)
+    ),
+    url(./justit.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 16px;
-  font-family: Tahoma;
+  /* font-family: Tahoma; */
 }
-  
+
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
-  width: 20%;
+  /* margin-top: 60px; */
+  width: 100%;
   border-radius: 50%;
 }
+
+/* .about-myself{
+  width: 50%;
+  margin: 0 auto 10px auto;
+} */
+
+.my-image {
+  border-top: 2px solid rgba(255, 255, 0, 0.448);
+  border-right: 2px solid rgba(255, 255, 0, 0.448);
+  width: 22%;
+  margin: 60px auto;
+  border-radius: 20em;
+  padding: 0.6rem;
+}
+
 .nav {
   display: flex;
-  justify-content: space-around;
-  font-family: fantasy;
+  /* justify-content: space-around; */
+  /* font-family: fantasy; */
   font-size: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
 }
 .nav a {
   text-decoration: none;
   letter-spacing: 1px;
   font-weight: bold;
-  padding: 4px 6px;
+  padding: 16px 20px;
+  text-transform: uppercase;
+  transition: 0.6s;
 }
+
 #active {
   background-color: #000;
   color: #fff;
+  margin-right: 10px;
 }
-#active:hover{
+#active:hover {
   background-color: plum;
 }
 .nav a:hover {
@@ -67,56 +98,226 @@ img {
 }
 h1 {
   text-align: center;
-  color: black;
+  color: rgb(255, 255, 255);
   margin: 0 0 20px 0;
   margin-top: var(--margin-top);
 }
-.div1 {
-  font-family: 'Roboto Slab', serif;
-  margin: auto;
-  margin-bottom: var(--margin-bottom);
-  text-align: center;
+
+.both-divs {
+  display: flex;
+  padding: 0 12rem;
+}
+
+.div,
+.div2 {
+  /* margin-left: 120px; */
+  width: 100%;
+  padding: 0 6rem;
+}
+
+hr.hr {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  border: 2px solid rgba(255, 255, 0, 0.484);
+}
+
+
+/* .div1 { */
+/* font-family: 'Roboto Slab', serif; */
+/* margin: auto; */
+/* margin-bottom: var(--margin-bottom); */
+/* text-align: center; */
+/* width: 100%; */
+
+/* } */
+
+li {
+  color: rgb(0, 0, 0);
+}
+
+.div1 ul li {
+  list-style: circle;
 }
 .div2 {
-  margin-top: var(--margin-top);
-  font-family:Arial, Helvetica, sans-serif;
+  /* margin-top: var(--margin-top); */
+  /* font-family:Arial, Helvetica, sans-serif; */
   font-weight: medium;
-  text-align: center;
+  /* text-align: center; */
+  /* margin: 50px auto 0 auto; */
+  /* width: fit-content; */
+  /* width: 100%; */
 }
+
+.both-divs p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: white;
+}
+/* 
+.div2 p{
+  text-align: center;
+} */
+
+.div2 ul {
+  margin: 0 auto;
+}
+
+.div2 ul li {
+  list-style: circle;
+  margin-bottom: 5px;
+}
+
+/* skills */
+
+.card{
+  width: 100%;
+  margin: 1rem 2rem;
+}
+
+.card p{
+  color: rgb(68, 69, 67);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.two, .one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 10rem;
+}
+.hundred {
+  width: 100%;
+  height: 2.5vh;
+  background-color: white;
+  border-radius: 5rem;
+  transition: 0.6s;
+  padding-right: 5px;
+}
+
+.skills{
+  margin: 6rem auto 0 auto;
+  width: 100%;
+}
+span.level {
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: right;
+  width: 100%;
+  z-index: 99;
+}
+
+.percent1 {
+  width: 90%;
+  height: 2.5vh;
+  background-color: rgb(10, 195, 10);
+  /* border: 1px solid black; */
+  border-radius: 5rem;
+  transition: 0.6s;
+  /* position: absolute; */
+}
+
+.percent2 {
+  width: 85%;
+  height: 2.5vh;
+  background-color: rgb(10, 195, 10);
+  /* border: 1px solid black; */
+  border-radius: 5rem;
+  transition: 0.6s;
+  /* position: absolute; */
+}
+
+.percent3 {
+  width: 50%;
+  height: 2.5vh;
+  background-color: rgb(10, 195, 10);
+  /* border: 1px solid black; */
+  border-radius: 5rem;
+  transition: 0.6s;
+  /* position: absolute; */
+}
+
+.percent4 {
+  width: 50%;
+  height: 2.5vh;
+  background-color: rgb(10, 195, 10);
+  /* border: 1px solid black; */
+  border-radius: 5rem;
+  transition: 0.6s;
+  /* position: absolute; */
+}
+
+/* ............ */
 
 h2 {
   text-align: center;
-  margin: 1em auto;
-  color:rgb(6, 18, 77);
+  margin: 1em auto 2em auto;
+  color: rgb(255, 255, 255);
 }
 
 .regform {
-    margin: 0 auto;
-    min-width: 300px;
-    max-width: 500px;
-    width: 60vw;
-    padding: 0 0 2em 0;
+  margin: 0 auto;
+  min-width: 300px;
+  max-width: 500px;
+  width: 60vw;
+  padding: 0 0 2em 0;
 }
 
 fieldset {
-  border: none;
+  border-top: 5px double yellow;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
   padding: 2rem 0 2rem 0;
-
+  background: rgba(7, 6, 6, 0.543);
+  border-radius: 20em 20em 0 0;
+  margin-top: 10em;
+  /* height: fit-content; */
 }
 
 .form_group-label {
   display: block;
-  margin: 0.5rem 0
+  /* margin: 0.5rem 0; */
 }
 
-input, textarea, select{
+fieldset label {
+  color: white;
+  font-size: larger;
+  font-weight: normal;
+}
+
+input,
+textarea,
+select {
   width: 100%;
   margin: 10px 0 0 0;
   min-height: 2em;
 }
 
-input, textarea {
+input,
+textarea {
   border: 1px solid #0a0a23;
+}
+
+input,
+select {
+  padding: .6rem 1.2rem;
+  border-radius: 0.5em 0.1em;
+  font-size: 1.2rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: none;
+  outline: none;
+}
+
+textarea {
+  font-size: 1.2rem;
+  padding: 1rem 1.2rem;
 }
 
 .inline {
@@ -127,23 +328,78 @@ input, textarea {
 
 .btn_submit {
   display: block;
-  width: 30%;
+  width: 80%;
   min-width: 200px;
   margin: 1em auto;
   height: 2em;
   font-size: 1.1em;
   background-color: var(--misc-color);
   border-color: white;
+  cursor: pointer;
+  transition: .7s;
 }
 
 .btn_submit:hover {
   background-color: var(--btn-hover-color);
+  color: white;
 }
 
-@media (max-width:840px) {
+@media (max-width: 840px) {
   .form {
-      width: 100%;
+    width: 100%;
   }
+
+  .two, .one {
+    flex-direction: column;
+    padding: 0 5rem;
+  }
+
+  .both-divs {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  .div1{
+    width: 90%;
+    padding-left: 2rem;
+  }
+
+  .div2{
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 3rem;
+    padding-left: 2rem;
+  }
+
+  .div2 ul{
+    margin: 0;
+  }
+
+  fieldset{
+    border-radius: 0;
+  }
+
+  h1{
+    font-size: 1.5rem;
+  }
+
+  .my-image{
+    width: 50%;
+  }
+
+  #active{
+    margin: 10px;
+  }
+  .nav{
+    /* width: 40%; */
+flex-direction: column;
+  }
+  .nav a{
+    font-size: 1rem;
+  }
+
 }
 .log_form {
   margin: 15% auto;
